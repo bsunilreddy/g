@@ -14,14 +14,13 @@ spec:
       labels:
         app: swiggy
     spec:
+      nodeSelector:  # Moved to the pod spec
+        app: node1  # Label key and value for node selection
       containers:
       - name: cont1
         image: rahamshaik/trainservice:latest
         ports:
           - containerPort: 80
-        # nodeSelector should be defined at the pod level
-        nodeSelector:
-          app: node1  # Label key and value for node selection
 ---
 apiVersion: v1
 kind: Service
