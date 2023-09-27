@@ -33,5 +33,5 @@ spec:
   ports:
     - protocol: TCP
       port: 80
-      targetPort: 8080
+      targetPort: 3306
     # Use 'LoadBalancer' for external access (if supported by your cluster)
