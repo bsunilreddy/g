@@ -13,9 +13,7 @@ spec:
     metadata:
       labels:
         app: jenkins
-    spec:
-      nodeSelector:
-        app: node2
+    
     spec:
       containers:
       - name: jenkins
@@ -30,10 +28,11 @@ metadata:
   name: jenkins-service
   namespace: sunil
 spec:
+  type: LoadBalancer
   selector:
     app: jenkins
   ports:
     - protocol: TCP
       port: 80
       targetPort: 8080
-  type: LoadBalancer  # Use 'LoadBalancer' for external access (if supported by your cluster)
+    # Use 'LoadBalancer' for external access (if supported by your cluster)
