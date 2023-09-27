@@ -25,8 +25,9 @@ kind: Service
 metadata:
   name: sv1
 spec:
-  type: ClusterIP
+  type: LoadBalancer
   selector:
     app: swiggy
   ports:
     - port: 80
+      targetport: 80
