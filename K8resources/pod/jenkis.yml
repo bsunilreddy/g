@@ -17,10 +17,9 @@ spec:
     spec:
       containers:
       - name: jenkins
-        image: jenkins/jenkins:lts
+        image: mysql:latest
         ports:
-        - containerPort: 8080
-        - containerPort: 50000
+        - containerPort: 3306
 ---
 apiVersion: v1
 kind: Service
