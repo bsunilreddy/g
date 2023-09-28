@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: sunil
-          image: sunilbokka12/sunil12-b
+          image: sunillinus/nodejs_realtime_demo_app7
           resources:
             limits:
               memory: 128Mi
