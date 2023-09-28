@@ -4,7 +4,6 @@ metadata:
   name: my-daemonset
   namespace: sunil
 spec:
-  replicas: 3
   selector:
     matchLabels:
       app: jenkins
@@ -12,13 +11,13 @@ spec:
     metadata:
       labels:
         app: jenkins
-    
     spec:
       containers:
       - name: jenkins
         image: vinodvanama/projecttrain
         ports:
         - containerPort: 80
+
 ---
 apiVersion: v1
 kind: Service
