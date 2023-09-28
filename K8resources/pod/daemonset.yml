@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Daemonset
 metadata:
-  name: mydaemonset
+  name: my-daemonset
   namespace: sunil
 spec:
   replicas: 3
