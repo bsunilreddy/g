@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: sunil
-          image: rahamshaik/rahamnewapp
+          image: rahamshaik/moviesservice
           resources:
             limits:
               memory: 128Mi
