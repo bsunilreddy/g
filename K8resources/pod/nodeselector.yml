@@ -6,7 +6,7 @@ metadata:
   name: swiggy-deploy
   namespace: srikanth
 spec:
-  replicas: 1
+  replicas: 10
   selector:
     matchLabels:
       app: swiggy
@@ -16,7 +16,7 @@ spec:
         app: swiggy
     spec:
       nodeSelector: 
-        app: node2
+        environment: production
       containers:
         - name: cont1
           image: rahamshaik/trainservice:latest
