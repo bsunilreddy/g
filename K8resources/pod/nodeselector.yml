@@ -6,7 +6,7 @@ metadata:
   name: swiggy-deploy
   namespace: srikanth
 spec:
-  replicas: 10
+  replicas: 1
   selector:
     matchLabels:
       app: swiggy
