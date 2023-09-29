@@ -16,7 +16,7 @@ spec:
         app: swiggy
     spec:
       nodeSelector: 
-      environment: production
+      app: node2
       containers:
         - name: cont1
           image: rahamshaik/trainservice:latest
