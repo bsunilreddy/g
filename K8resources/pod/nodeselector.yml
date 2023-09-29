@@ -15,7 +15,7 @@ spec:
       labels:
         app: swiggy
     spec:
-      nodeSelector: null
+      nodeSelector: 
       environment: production
       containers:
         - name: cont1
