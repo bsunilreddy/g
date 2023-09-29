@@ -4,9 +4,9 @@ metadata:
   labels:
     app: swiggy1
   name: swiggy-deploy
-  namespace: roboshop  # Namespace for the Deployment
+  namespace: srikanth  # Namespace for the Deployment
 spec:
-  replicas: 3
+  replicas: 10
   selector:
     matchLabels:
       app: swiggy
@@ -16,7 +16,7 @@ spec:
         app: swiggy
     spec:
       nodeSelector:
-        app: node1
+      environment: production
       containers:
       - name: cont1
         image: rahamshaik/trainservice:latest
@@ -26,8 +26,8 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: abc1
-  namespace: roboshop  # Namespace for the Service
+  name: swiggy
+  namespace: srikanth # Namespace for the Service
 spec:
   type: LoadBalancer
   selector:
