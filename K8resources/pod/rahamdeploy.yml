@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sunil
+  namespace: raham
+labels:
+  env: dev
+spec:
+  selector:
+    matchLabels:
+      env: dev
+  template:
+    metadata:
+      labels:
+        env: dev
+    spec:
+      containers:
+      - name: myapp
+        image: rahamshaik/rechargepaytm
+        ports:
+        - containerPort: 80
+  
+apiVersion: v1
+kind: Service
+metadata:
+  name: sunil
+  namespace: raham
+spec:
+  type: LoadBalancer
+  selector:
+    env: dev
+  ports:
+  - port: 80
+    targetPort: 80
