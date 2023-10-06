@@ -1,4 +1,3 @@
-
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -18,8 +17,8 @@ spec:
       containers:
         - name: cont1
           image: httpd
-      ports:
-        - containerPort: 80
+          ports:                # Correct indentation here
+            - containerPort: 80  # Indent further for the specific port
 ---
 apiVersion: v1
 kind: Service
@@ -33,3 +32,4 @@ spec:
     - protocol: TCP
       port: 80
       targetPort: 80
+
