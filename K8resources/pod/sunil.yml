@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: sunil
-          image: shivaman/apachedogs
+          image: techworldwithsiva/catalogue
           ports:
             - containerPort: 80
 ---
