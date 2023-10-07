@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: sunil
-          image: shivangisx/22novact123
+          image: jenkins/jenkins
           ports:
             - containerPort: 80
 ---
