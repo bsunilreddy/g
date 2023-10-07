@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: sunil
-          image: elasticsearch:latest
+          image: ubuntu/prometheus
           ports:
             - containerPort: 80
 ---
