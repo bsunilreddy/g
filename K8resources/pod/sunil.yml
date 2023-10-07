@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: sunil
-          image: httpd:latest
+          image: mysql:latest
           ports:
             - containerPort: 80
 ---
