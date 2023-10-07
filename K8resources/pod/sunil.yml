@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: sunil
-          image: shivam1419/tweet-project:latest
+          image: shivaman/apachedogs
           ports:
             - containerPort: 80
 ---
