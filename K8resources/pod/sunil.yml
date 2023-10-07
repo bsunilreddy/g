@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: sunil
-          image: opensuse
+          image: httpd:latest
           ports:
             - containerPort: 80
 ---
