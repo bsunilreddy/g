@@ -19,6 +19,7 @@ spec:
       containers:
         - name: sunil
           image: shivangisx/22novact123
+          ports:
             - containerPort: 80
 ---
 apiVersion: v1
