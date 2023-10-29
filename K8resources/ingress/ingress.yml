@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: example-ingress
+  namespace: sunil
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+  - host: sunil.com
+    http:
+      paths:
+      - path: /path
+        pathType: Prefix
+        backend:
+          service:
+            name: sunil
+            port:
+              number: 80

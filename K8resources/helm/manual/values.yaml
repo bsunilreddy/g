@@ -1,7 +1,7 @@
 # values.yaml is the file to supply default values to helm charts
 # you can always override this at run time
 deployment:
-  replicaCount: 5
+  replicaCount: 1
   imageVersion: alpine
 service:
   port: 80
